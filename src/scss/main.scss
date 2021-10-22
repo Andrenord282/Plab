@@ -1,0 +1,31 @@
+@import "_vars";
+@import "components/btns";
+@import "components/header";
+@import "components/header-top";
+@import "components/header-logo";
+@import "components/header-mail-slogan";
+@import "components/header-worktime-tel-feedback";
+@import "components/header-info-btns";
+
+
+
+
+
+.container{
+    margin: 0 auto;
+    @media (max-width: 320px) {
+        max-width: 320px;
+    }
+
+    @media (max-width: 375px) {
+        max-width: 375px;
+    }
+
+    @media (min-width:  376px) {
+        max-width: 768px;
+    }
+    
+    @media (min-width:  1024px) {
+        max-width: 1160px;
+    }
+}

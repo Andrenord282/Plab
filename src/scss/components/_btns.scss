@@ -1,0 +1,76 @@
+.btn{
+    font-size: 13px;
+    color: $btnColorDefault;
+    padding: 0;
+
+    // .btn__measurer
+    &__measurer {
+        width: 145px;
+        height: 30px;
+        background: linear-gradient(180deg, #ffffff -153.33%,rgba(255, 255, 255, 0) 125.56%), #404144;
+        background-blend-mode: overlay, normal;
+        
+        @media (min-width: 658px) {
+            height: 45px;
+        }
+
+        @media (min-width: 769px) {
+            width: 170px;
+        }
+        
+        @media (min-width: 1024px) {
+            width: 190px;
+        }
+    }
+
+    // .btn__calc
+
+    &__calc {
+        width: 145px;
+        height: 30px;
+        background: linear-gradient(180deg, #ffffff -221.11%, rgba(255, 255, 255, 0) 193.51%), #f36327;
+        background-blend-mode: overlay, normal;
+        
+        @media (min-width: 658px) {
+            height: 45px;
+        }
+
+        @media (min-width: 769px) {
+            width: 170px;
+        }
+    }
+
+    // .btn__info-srvice
+
+    &__info-srvice{
+        width: 145px;
+        height: 30px;
+        background: linear-gradient(180deg, #ffffff -221.11%, rgba(255, 255, 255, 0) 193.51%), #f36327;
+        background-blend-mode: overlay, normal;
+
+        @media (max-width: 657px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after{
+                content: '';
+                height: 15px;
+                width: 15px;
+                margin-left: 10px;
+                mask-image: url('../img/sprite.svg#arrowDown');
+                mask-repeat: no-repeat;
+                background-color: $btnColorDefault;
+                transition: all .3s linear;
+            }
+            &.active{
+                &::after{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        @media (min-width: 658px) {
+            height: 45px;
+        }
+    }
+}

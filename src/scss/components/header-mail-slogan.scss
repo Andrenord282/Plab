@@ -1,0 +1,67 @@
+.header-mail-slogan {
+    max-width: 175px;
+    // .header-mail-slogan__mail
+
+    &__mail {
+        display: none;
+        position: relative;
+        font-family: $defaultFont;
+        font-size: 14px;
+        font-weight: 400;
+        color: $dustyGray;
+        margin-bottom: 6px;
+        padding-left: 15px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 10px;
+            width: 14px;
+            transform: translateY(-50%);
+            mask-image: url('../img/sprite.svg#mail');
+            mask-repeat: no-repeat;
+            background-color: currentColor;
+        }
+
+        @media (min-width: 501px) {
+            display: inline-block;        
+        } 
+        @media (min-width: 1024px) {
+            margin-bottom: 14px;          
+        } 
+    }
+
+    // .header-mail-slogan__slogan
+
+    &__slogan {
+        display: inline-block;
+        position: relative;
+        font-family: $defaultFont;
+        font-size: 10px;
+        font-weight: 400;
+        color: $mineShaft;
+        margin-bottom: 4px;
+        padding-left: 5px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background-color: $flamingo;
+        }
+
+        @media (min-width: 501px) {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 20px;
+            padding-left: 22px;
+        }
+    }
+}

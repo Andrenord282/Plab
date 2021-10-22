@@ -1,0 +1,124 @@
+.header-info-btns {
+    max-width: 380px;
+
+    @media (max-width: 657px) {
+        position: relative;
+    }
+
+    // header-info-btns__info-srvice
+
+    // .header-info-btns__info
+
+    &__info {
+        align-items: center;
+        justify-content: space-between;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .0s linear;
+        position: absolute;
+        top: 30px;
+        left: 0;
+
+        @media (min-width: 658px) {
+            position: static;
+            display: flex;
+            opacity: 1;
+            max-height: 100%;
+            margin-bottom: 14px;
+        }
+
+        // Показываем список c информацией и сервисы
+        // добавляем класс при нажатии на кнопку с инфомрацией
+
+        &.show {
+            opacity: 1;
+            background-color: $white;
+            transition: all .3s linear;
+            
+        }
+    }
+
+    // .header-info-btns__info-item
+
+    &__info-item {
+        margin-bottom: 5px;
+
+        @media (min-width: 658px) {
+            margin-bottom: 0;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+        @media (min-width: 715px) {
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+
+    // .header-info-btns__info-link
+
+    &__info-link {
+        font-family: $defaultFont;
+        font-size: 14px;
+        font-weight: 400;
+        color: $dustyGray;
+        white-space: nowrap;
+
+        @media (min-width: 769px) {
+            white-space:normal
+  
+        }
+    }
+
+    // .header-info-btns__btns
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+
+        @media (min-width: 658px) {
+            flex-direction: row;
+            justify-content: end;
+        }
+
+        @media (min-width: 769px) {
+        justify-content: space-between;
+        }
+    }
+
+    // .header-info-btns__info-srvice
+
+    &__info-srvice{
+
+        @media (max-width:657px) {
+            margin-bottom: 10px;
+        }
+        
+    }
+
+    // .header-info-btns__measurer
+
+    &__measurer {
+
+        @media (max-width:657px) {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 658px) {
+            margin-right: 10px;
+        }
+
+    }
+
+    // .header-info-btns__calc
+
+    &__calc {
+    }
+}
