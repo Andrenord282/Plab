@@ -1,9 +1,12 @@
-
 .header-top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 10px 14px 10px;
+    
+    @media (min-width: 501px) {
+        align-items: flex-start;
+    }
 
     @media (min-width: 1024px) {
         align-items: center;

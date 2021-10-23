@@ -1,0 +1,28 @@
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+
+    @media (max-width: 767px) {
+        position: relative;
+    }
+    
+    @media (min-width: 768px) {
+        position: relative;
+    }
+    
+    // .header-bottom__city-pinter
+
+    &__city-pinter {
+    }
+
+    // .header-bottom__navigation
+
+    &__navigation {
+    }
+}
+
+
+
+

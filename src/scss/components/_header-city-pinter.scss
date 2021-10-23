@@ -1,0 +1,31 @@
+.header-city-pinter {
+
+    // .header-city-pinter__btn
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.14;
+        color: $gray;
+    }
+
+    // .header-city-pinter__geo-point
+
+    &__geo-point {
+        height: 13px;
+        width: 9px;
+        margin-right: 10px;
+    }
+
+    // .header-city-pinter__arrow
+
+    &__arrow {
+        height: 6px;
+        width: 6px;
+        fill: #f06326;
+        margin-left: 5px;
+    }
+}
