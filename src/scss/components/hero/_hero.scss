@@ -1,0 +1,50 @@
+.hero {
+
+    // .hero__carusel
+
+    &__carusel {
+        position: relative;
+        max-width: 768px;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+            min-height: 530px;
+        }
+        @media (min-width: 768px) {
+            min-height: 860px;
+            max-width: 768px;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 6px;
+                width: 100%;
+                background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
+                background-blend-mode: overlay, normal;
+            }
+        }   
+
+        @media (min-width: 1024px) {
+            min-height: 690px;
+            max-width: 1980px;
+        }
+    }
+
+    // .hero__carusel-item
+
+    &__carusel-item{
+        opacity: 0;
+        transition: all .3s linear;
+
+        &.show{
+            opacity: 1;
+        }
+    }
+
+    // .hero__tabs
+
+    &__tabs {
+    }
+
+
+}

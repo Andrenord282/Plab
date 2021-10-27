@@ -1,15 +1,35 @@
 @import "_vars";
-@import "components/btns";
-@import "components/header";
-@import "components/header-top";
-@import "components/header-logo";
-@import "components/header-mail-slogan";
-@import "components/header-worktime-tel-feedback";
-@import "components/header-info-btns";
-@import "components/header-bottom";
-@import "components/header-city-pinter";
-@import "components/burger-nav";
-@import "components/header-navigation";
+
+// HEADER
+
+@import "components/header/header";
+@import "components/header/header-top";
+@import "components/header/header-logo";
+@import "components/header/header-mail-slogan";
+@import "components/header/header-worktime-tel-feedback";
+@import "components/header/header-info-btns";
+@import "components/header/header-bottom";
+@import "components/header/header-city-pinter";
+@import "components/header/header-burger-nav";
+@import "components/header/header-navigation";
+
+// HERO
+
+@import "components/hero/hero";
+@import "components/hero/production-capacity";
+@import "components/hero/prepayment";
+@import "components/hero/preparation-time";
+@import "components/hero/hero-tabs";
+
+// OTHER
+@import "components/other/btns";
+@import "components/other/headlines";
+
+
+
+
+
+
 
 
 

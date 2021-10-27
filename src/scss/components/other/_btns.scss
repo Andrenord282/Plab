@@ -4,6 +4,7 @@
     padding: 0;
 
     // .btn__measurer
+
     &__measurer {
         width: 145px;
         height: 30px;
@@ -38,6 +39,21 @@
         @media (min-width: 769px) {
             width: 170px;
         }
+
+        // .btn__calc_hero
+
+        &_hero {
+            width: 270px;
+            height: 60px;
+            width: 258px;
+            height: 60px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.2;
+            background: linear-gradient(180deg, #ffffff -153.33%,rgba(255, 255, 255, 0) 125.56%), #404144;
+            background-blend-mode: overlay, normal;
+        
+            }
     }
 
     // .btn__info-srvice
@@ -73,4 +89,41 @@
             height: 45px;
         }
     }
+
+    // .btn__feedback
+
+      &__feedback {
+        width: 258px;
+        height: 60px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.2;
+        background: linear-gradient(180deg, #ffffff -221.11%, rgba(255, 255, 255, 0) 193.51%), #f36327;
+        background-blend-mode: overlay, normal;
+    }
+    
+    // .btn__prepayment
+
+    &__prepayment{
+        width: 258px;
+        height: 60px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.2;
+        background: linear-gradient(180deg, #ffffff -221.11%, rgba(255, 255, 255, 0) 193.51%), #f36327;
+        background-blend-mode: overlay, normal;
+    }
+
+    // .btn__preparation-time
+
+    &__preparation-time {
+        width: 258px;
+        height: 60px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.2;
+        background: linear-gradient(180deg, #ffffff -221.11%, rgba(255, 255, 255, 0) 193.51%), #f36327;
+        background-blend-mode: overlay, normal;
+    }
+
 }

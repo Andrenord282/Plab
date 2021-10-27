@@ -1,0 +1,60 @@
+.headline {
+
+    // .headline__first
+
+    &__first {
+        font-family: Raleway;
+        font-size: 40px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $mineShaft;
+        font-weight: 400;
+        margin-bottom: 20px;
+        span{
+            font-weight: 900;
+        }
+
+        @media (max-width: 475px) {
+            font-size: 25px;
+        }
+
+        @media (min-width: 700px) {
+            font-size: 51px;
+        }
+
+        // .headline__first_production-capacity
+        
+        &_production-capacity{
+            @media (max-width: 767px) {
+                color: $white;
+            }
+        }
+
+        // .headline__first_prepayment
+
+        &_prepayment{
+            color: $white;
+        }
+
+        // .headline__first_preparation-time
+
+        &_preparation-time{
+            color: $white;
+        }
+
+    }
+
+    // .headline__second
+
+     &__second {
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 1.18;
+        color: $mineShaft;
+        span{
+            font-weight: 800;
+        }
+    
+    }
+}

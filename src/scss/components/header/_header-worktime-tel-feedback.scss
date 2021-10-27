@@ -184,7 +184,7 @@
         font-family: $defaultFont;
         font-size: 12px;
         font-weight: 400;
-        color: $flamingo;
+        color: $flamingoDefault;
         padding: 0;
         white-space: nowrap;
         &::before{
@@ -195,7 +195,7 @@
             height: 1px;
             width: 0%;
             transform: translateX(-50%);
-            background-color: $flamingo;
+            background-color: $flamingoDefault;
             transition: width .3s linear;
         }
 
