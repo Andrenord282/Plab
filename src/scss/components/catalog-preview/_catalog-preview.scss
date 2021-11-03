@@ -1,0 +1,132 @@
+.catalog-preview {
+    background-color: $ghostWhite;
+    // .catalog-preview__container
+
+    &__container {
+
+    }
+
+    // .catalog-preview__content
+
+    &__content {
+        padding: 70px 10px 70px 10px;
+    }
+
+    // .catalog-preview__title
+
+    &__title {
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+
+    // .catalog-preview__nav
+
+    &__nav {
+        margin-bottom: 40px;
+    }
+
+    // .catalog-preview__carusel
+
+    &__carusel{
+        position: relative;
+        min-width: 100%;
+        overflow: hidden;
+    }
+
+    // .catalog-preview__products
+
+    &__products {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0, -200%);
+        opacity: 0;
+        transition: all .5s linear .2s;
+
+        &.active{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        
+        @media (min-width: 501px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            transform: translateX(-200%);
+        }
+    }
+
+    // .catalog-preview__product
+
+    &__product {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .catalog-preview__nav-btn
+
+    &__nav-btn{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    // .catalog-preview__btn
+
+    &__btn{
+        height: 35px;
+        width: 35px;
+        background-color: $flamingoDefault;
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+
+    }
+
+    // .preview__pagination-nav
+
+    &__pagination-nav{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        &.active{
+            opacity: 1;
+        }
+    }
+
+    // .catalog-preview__pagination-item
+
+    &__pagination-item{
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background-color: $flamingoDefault;
+        border-radius: 50px;
+        overflow: hidden;
+        transition: color .3s linear;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+        &.active{
+            color: $mineShaft;
+        }
+ 
+    }
+}
+
+
+
+
+

@@ -1,20 +1,19 @@
 
-let index = 0;
+    let num = 0;
+
 
 // Цикл прокрутки табов и слайдов через каждые 5 секунд
-
-
 
 startTabsSlades(tabNavItem,tabContentItem)
 
 // Основная работа табов вместе с слайдами
 
 function startTabsSlades(tabs, slades) {
-
-    tabs[index].classList.add('active');
-    slades[index].classList.add('show');
-    index++;
-    cycleChangeTabsSlades;
+    console.log(num);
+    tabs[num].classList.add('active');
+    slades[num].classList.add('show');
+    num++;
+    // cycleChangeAfterClick;
     clickTabNav(tabNavItem, tabContentItem);    
 }
 
@@ -26,18 +25,21 @@ function startTabsSlades(tabs, slades) {
 function clickTabNav(tabs, slades) { // Кидаем название элимента
     tabs.forEach((item, i) => { // Перебираем коллекцию элиментов
         item.addEventListener('click', (e) => { // Событие клик мышки
-            let index = i;
+            num = i;
+            console.log(num);
             resetClass(tabs, 'active'); // Сбрасываем класс active у всех элиментов
             resetClass(slades, 'show'); // Сбрасываем класс active у всех элиментов
             item.classList.add('active'); // Добавляем класс active конкретному элименту с кликом мышки
-            slades[index].classList.add('show'); // Добавляем класс show слайду, согласно индексу элимента
-            clearInterval(cycleChangeTabsSlades);
-            console.log(index);
-            cycleChangeTabsSlades;
+            slades[num].classList.add('show'); // Добавляем класс show слайду, согласно индексу элимента
+            if(num < tabs.length){
+                num ++;
+            }
+            console.log(num);
         })
     })
-    cycleChangeTabsSlades;
 }
+
+
 
 // Сбросить класс у элиментов
 
@@ -47,14 +49,18 @@ function resetClass(element, className) {
     })    
 }
 
+// const cycleChangeAfterClick = setInterval(() => {
+//     if(num == tabNavItem.length){
+//         num = 0;
+//     }
+//     resetClass(tabNavItem, 'active'); // Сбрасываем класс active у всех элиментов
+//     resetClass(tabContentItem, 'show'); // Сбрасываем класс active у всех элиментов
+//     tabNavItem[num].classList.add('active')
+//     tabContentItem[num].classList.add('show')
+//     num++;
+//     console.log(num);
+//     if(num == tabNavItem.length){
+//         num = 0;
+//     }
+// }, 5000, num);
 
-const cycleChangeTabsSlades = setInterval(() => {
-    resetClass(tabNavItem, 'active'); // Сбрасываем класс active у всех элиментов
-    resetClass(tabContentItem, 'show'); // Сбрасываем класс active у всех элиментов
-    tabNavItem[index].classList.add('active')
-    tabContentItem[index].classList.add('show')
-    index++;
-    if(index == tabNavItem.length){
-        index = 0;
-    }
-}, 5000);

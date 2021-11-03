@@ -49,11 +49,17 @@
      &__second {
         font-family: Raleway;
         font-weight: 400;
-        font-size: 38px;
+        font-size: 30px;
         line-height: 1.18;
+        text-transform: uppercase;
         color: $mineShaft;
         span{
             font-weight: 800;
+        }
+
+        
+        @media (min-width: 1024px) {
+            font-size: 38px;
         }
     
     }

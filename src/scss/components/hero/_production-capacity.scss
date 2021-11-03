@@ -1,13 +1,4 @@
 .production-capacity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-    
-    
-
-
 
     @media (max-width: 767px) {
         background-image: url('../img/slide02.jpg');
@@ -20,16 +11,16 @@
         background-size: 100% auto;
         background-position: center 30px;
 
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-height: 100%;
-            min-width: 100%;
-            background: linear-gradient(97.39deg, #E1E1E3 -0.28%, #FFFFFF 100%);
-            z-index: -1;
-        }
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     min-height: 100%;
+        //     min-width: 100%;
+        //     background: linear-gradient(97.39deg, #E1E1E3 -0.28%, #FFFFFF 100%);
+        //     z-index: -1;
+        // }
     }
 
 

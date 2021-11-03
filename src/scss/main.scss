@@ -21,7 +21,16 @@
 @import "components/hero/preparation-time";
 @import "components/hero/hero-tabs";
 
-// OTHER
+// CATALOG-PREVIEW
+@import "components/catalog-preview/catalog-preview";
+@import "components/catalog-preview/catalog-preview-nav";
+@import "components/catalog-preview/product-card";
+
+
+
+
+
+// OTHER ITEMS
 @import "components/other/btns";
 @import "components/other/headlines";
 
@@ -48,6 +57,6 @@
     }
     
     @media (min-width:  1024px) {
-        max-width: 1160px;
+        max-width: 1180px;
     }
 }

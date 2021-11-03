@@ -21,6 +21,7 @@
                 width: 100%;
                 background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
                 background-blend-mode: overlay, normal;
+                z-index: 2;
             }
         }   
 
@@ -33,11 +34,21 @@
     // .hero__carusel-item
 
     &__carusel-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
         opacity: 0;
         transition: all .3s linear;
-
+        visibility: hidden;
+        z-index: 2;
         &.show{
             opacity: 1;
+            z-index: 2;
+            visibility: visible;
+
+
         }
     }
 
@@ -45,6 +56,4 @@
 
     &__tabs {
     }
-
-
 }

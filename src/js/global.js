@@ -31,3 +31,32 @@ const tabCarusel = document.querySelector('.hero__carusel');
 const tabNavItem = document.querySelectorAll('.hero-tabs__item');
 const tabContentItem = document.querySelectorAll('.hero__carusel-item');
 
+// CATALOG-PREVIEW
+// Работа превью каталога продуктов
+
+const productsContent = document.querySelector('.catalog-preview__content');
+
+const navBtnsMenu = document.querySelector('.catalog-preview-nav'); // Навигация по категориям в карусели
+const navBtnMenu = document.querySelectorAll('.catalog-preview-nav__item'); // Кнопки навигации по категориям в карусели
+
+const productsCarusel = document.querySelector('.catalog-preview__carusel'); // Окно карусели
+const productsCaruselWidth = productsCarusel.clientWidth; // Ширина окна корусели
+const productsCaruselItems = document.querySelectorAll('.catalog-preview__products'); // Ленты с картчоками товаров
+let productsCaruselItemsActive;
+let countItemsCarusel;
+let productsCaruselItemsActiveWidth;
+let itemCaruselWidth;
+let itemCaruselCurrentWidth;
+
+const productCaruselItem = document.querySelectorAll('.catalog-preview__product'); // Карточки товаров
+
+
+// const productsCaruselWidth 
+// const productsCaruselScrollWidth = productsCarusel.scrollWidth;
+let paginationNav;
+let paginationItem;
+let productNavBtn;
+let productsBtnNext;
+let productBtnPrev;
+// const productCard = document.querySelectorAll('.product-card');
+
