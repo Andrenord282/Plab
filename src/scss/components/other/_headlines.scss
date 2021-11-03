@@ -57,9 +57,31 @@
             font-weight: 800;
         }
 
+        // .headline__second_our-statistics
+
+        &_our-statistics {
+            color: $white;
+        }
+
+        // .headline__second_our-clients
+
+        &_our-clients {
+            font-family: Raleway;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 1.16;
+            color: $white;
+        }
+
         
         @media (min-width: 1024px) {
             font-size: 38px;
+            
+            // .headline__second_our-clients
+            
+            &_our-clients {
+                font-size: 30px;
+            }
         }
     
     }

@@ -1,0 +1,29 @@
+.company-statistics {
+    min-height: 720px;
+    background-image: url('../img/bgStatistics.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // .company-statistics__container
+
+    &__container {
+    }
+
+    // .company-statistics__content
+
+    &__content{
+        padding: 0 10px;
+    }
+
+    // .company-statistics__top
+
+    &__top {
+    }
+
+    // .company-statistics__bottom
+
+    &__bottom {
+    }
+}
+.container {
+}

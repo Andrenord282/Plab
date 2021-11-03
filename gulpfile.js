@@ -52,7 +52,8 @@ const watchFiles = () => {
       baseDir: "./app"
     },
   });
-  watch('./src/partials/*.html', html);
+  watch('./src/partials/**/*.html', html);
+  watch('./src/partials/*.html', html)
   watch('./src/*.html', html);
   watch('./src/scss/**/*.scss', styles);
   watch('./src/img/*.{jpg,jpeg,png,svg}', img);

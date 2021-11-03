@@ -1,0 +1,38 @@
+.our-clients {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+
+    // .our-clients__title
+
+    &__title {
+        max-width: 230px;
+        margin-bottom: 40px;
+        align-self: flex-start;
+
+        @media (min-width: 1024px) {
+            margin-right: auto;
+            margin-bottom: 0;
+            
+        }
+        @media (min-width: 1200px) {
+            margin-right: 170px
+        }
+    }
+
+
+    // .our-clients__row
+
+    &__row {
+    }
+}
+
+// display: flex;
+// align-items: flex-start;
+// flex-direction: column;
+// margin-bottom: 54px;
+// padding-top: 110px;

@@ -26,7 +26,12 @@
 @import "components/catalog-preview/catalog-preview-nav";
 @import "components/catalog-preview/product-card";
 
-
+// COMPANY-STATISTICS
+@import "components/company-statistics/company-statistics";
+@import "components/company-statistics/our-statistics";
+@import "components/company-statistics/statistics-table";
+@import "components/company-statistics/our-clients";
+@import "components/company-statistics/clients-row";
 
 
 
@@ -59,4 +64,6 @@
     @media (min-width:  1024px) {
         max-width: 1180px;
     }
+
 }
+
