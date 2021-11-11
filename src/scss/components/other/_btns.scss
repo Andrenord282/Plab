@@ -144,7 +144,7 @@
     // .btn__call-measurer
 
     &__call-measurer {
-        padding: 25px 54px;
+        padding: 25px 25px;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.16;
@@ -152,6 +152,10 @@
         color: $white;
         background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
         background-blend-mode: overlay, normal;
+
+        @media (min-width: 426px) {
+            padding: 25px 54px;
+        }
     }
 
 }

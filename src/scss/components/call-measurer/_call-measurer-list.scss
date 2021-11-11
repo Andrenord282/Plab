@@ -1,0 +1,143 @@
+.call-measurer-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    padding-top: 36px;
+    width: 80%;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        width: auto;
+    }
+
+    // .call-measurer-list__item
+
+    &__item {
+        position: relative;
+        min-width: 286px;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 768px) {
+            min-width: auto;
+            margin-bottom: 0;
+        }
+
+
+        @media (min-width: 1024px) {
+    
+            &:hover{
+                .call-measurer-list__item-info{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // .call-measurer-list__item-info
+
+    &__item-info{
+        position: absolute;
+        top: -130px;
+        max-width: 250px;
+        height: 115px;
+        background-color: $ghostWhite;
+        color: $shark;
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 10px 15px;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 15px solid transparent;
+            border-top: 15px solid $ghostWhite; 
+        }
+    }
+
+    // .call-measurer-list__btn
+
+    &__btn {
+        position: relative;
+        padding: 16px 0 16px 70px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        color: $white;
+
+        &::before{
+            content: '';
+            position: absolute;
+            height: 55px;
+            width: 55px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: $flamingoLight;
+            mask-repeat: no-repeat;
+        }
+
+        // .call-measurer-list__btn_constructions
+
+        &_constructions{
+            &::before{
+                mask-image: url('../img/sprite.svg#measurer01');
+            }
+        }
+
+        // .call-measurer-list__btn_measurer
+
+        &_measurer{
+            &::before{
+                mask-image: url('../img/sprite.svg#measurer02');
+            }
+        }
+
+        // .call-measurer-list__btn_calc
+
+        &_calc{
+            &::before{
+                mask-image: url('../img/sprite.svg#measurer03');
+            }
+        }
+
+
+        @media (min-width: 426px) {
+            padding: 16px 0 16px 82px;
+        }
+
+        @media (min-width: 768px) {
+            padding: 16px 0 16px 40px;
+
+            &::before{
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            padding: 16px 0 16px 65px;
+
+            &::before{
+                height: 46px;
+                width: 44px;
+            }
+        }
+    }
+}

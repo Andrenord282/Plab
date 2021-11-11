@@ -6,20 +6,37 @@
     // .call-measurer__content
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 80px 10px 70px 10px;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 
     // .call-measurer__title
 
     &__title {
+        align-self: start;
         max-width: 390px;
-        margin-bottom: 28px;
+        margin-bottom: 60px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 28px;
+        }
     }
 
     // .call-measurer__btn
 
     &__btn {
+        align-self: center;
         margin-bottom: 78px;
+
+        @media (min-width: 426px) {
+            align-self: start;
+        }
     }
 
     // .call-measurer__list
@@ -28,105 +45,4 @@
     }
 }
 
-.call-measurer-list {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
 
-    // .call-measurer-list__item
-
-    &__item {
-        position: relative;
-        &:hover{
-            .call-measurer-list__item-info{
-                opacity: 1;
-            }
-        }
-    }
-
-    // .call-measurer-list__item-info
-
-    &__item-info{
-        position: absolute;
-        top: -130px;
-        max-width: 250px;
-        height: 115px;
-        background-color: $ghostWhite;
-        color: $shark;
-        font-size: 14px;
-        line-height: 1.4;
-        padding: 10px 15px;
-        opacity: 0;
-        transition: opacity .3s ease-in;
-        &::before{
-            content: '';
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 15px solid transparent;
-            border-top: 15px solid $ghostWhite; 
-        }
-    }
-
-    // .call-measurer-list__btn
-
-    &__btn {
-        position: relative;
-        padding: 16px 0 16px 65px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        color: $white;
-
-        &::before{
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            background-color: $flamingoLight;
-            transform: translateY(-50%);
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: 16px;
-        }
-
-        // .call-measurer-list__btn_constructions
-
-        &_constructions{
-            &::before{
-                height: 46px;
-                width: 44px;
-                mask-image: url('../img/sprite.svg#measurer01');
-            }
-        }
-
-        // .call-measurer-list__btn_measurer
-
-        &_measurer{
-            &::before{
-                height: 46px;
-                width: 44px;
-                mask-image: url('../img/sprite.svg#measurer02');
-            }
-        }
-
-        // .call-measurer-list__btn_calc
-
-        &_calc{
-            &::before{
-                height: 46px;
-                width: 44px;
-                mask-image: url('../img/sprite.svg#measurer03');
-            }
-        }
-
-        span{
-            border-bottom: 2px dashed $flamingoLight;
-            text-decoration: none;
-        }
-    }
-}
