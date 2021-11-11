@@ -32,7 +32,9 @@
 
         @media (min-width: 768px) {
             min-width: auto;
-            margin-bottom: 0;
+            &:not(:last-child){
+                margin-bottom: 0;
+            }
         }
 
 
