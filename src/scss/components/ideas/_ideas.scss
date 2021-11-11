@@ -1,0 +1,40 @@
+.ideas {
+    position: relative;
+    background-color: $ghostWhite;
+    // .ideas__container
+
+    &__container {
+        padding: 70px 10px 70px 10px;
+    }
+
+    // .ideas__content
+
+    &__content {
+        position: relative;
+        z-index: 3;
+    }
+
+    // .ideas__title
+
+    &__title {
+        margin-bottom: 40px;
+
+        @media (min-width: 1024px) {
+            margin-bottom: 70px;
+
+        }
+    }
+
+    // .ideas__navigation
+
+    &__navigation {
+    }
+
+    // .ideas_ideas-sliders
+
+    &__ideas-sliders{
+
+    }
+}
+
+

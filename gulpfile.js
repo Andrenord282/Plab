@@ -71,10 +71,6 @@ const watchFiles = () => {
 const html = () => {
   return src(['./src/*.html'])
   .pipe(fileInclude())
-  .pipe(webphtml())
-  // .pipe(htmlmin({
-  //   collapseWhitespace: true
-  // }))
   .pipe(dest('./app'))
   .pipe(browserSync.stream());
 }

@@ -126,4 +126,32 @@
         background-blend-mode: overlay, normal;
     }
 
+    // .btn__idea
+
+    &__idea{
+        width: 190px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        color: $white;
+        background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
+        background-blend-mode: overlay, normal;
+        border-radius: 2px;
+    }
+
+    // .btn__call-measurer
+
+    &__call-measurer {
+        padding: 25px 54px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.16;
+        text-align: center;
+        color: $white;
+        background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
+        background-blend-mode: overlay, normal;
+    }
+
 }

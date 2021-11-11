@@ -60,3 +60,4 @@ let productsBtnNext;
 let productBtnPrev;
 // const productCard = document.querySelectorAll('.product-card');
 
+
