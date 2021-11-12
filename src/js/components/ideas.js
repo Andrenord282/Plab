@@ -37,7 +37,7 @@ function setIdeaItemsHeight() { // Определяем какой блок с �
 
 
 
-setIndexItem(navItemIdeas); // Навигационным кнопкам добавляем их индекс
+setIndexItem(navItemIdeas, 'index'); // Навигационным кнопкам добавляем их индекс
 pickIdea();
 
 
@@ -107,12 +107,6 @@ function workCaruselsSlider(carusels, parentArrowNav) {
 
 
 
-function setIndexItem(items) {
-
-    items.forEach((item, i) => {
-        item.setAttribute('data-index', i)
-    });
-}
 
 function pickIdea() {
 
