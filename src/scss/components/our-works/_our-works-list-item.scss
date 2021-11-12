@@ -1,0 +1,202 @@
+.our-works-list-item {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before{
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+
+    @media (min-width: 769px) {
+        &:hover{
+            .our-works-list-item__content{
+                opacity: 1;
+            }
+    
+            .our-works-list-item__content_detail{
+                background: linear-gradient(180deg, #FFFFFF -235%, rgba(255, 255, 255, 0) 161.67%), #F76425;
+            }
+        } 
+    }
+
+    // .our-works-list-item_height
+
+    &_height {
+        &::before{
+            padding-top: 77.8%;
+        }
+    }
+
+    // .our-works-list-item_low
+
+    &_low {
+        width: 50%;
+    }
+
+    // .our-works-list-item_detail
+
+    &_detail {
+        background: linear-gradient(180deg, $white -235%, rgba(255, 255, 255, 0) 161.67%), #F76425;
+        background-blend-mode: overlay, normal;
+    }
+
+    // .our-works-list-item__content
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transition: all 0.5s linear;
+
+        // .our-works-list-item__content_detail
+
+        &_detail {
+            opacity: 1;
+            background: linear-gradient(180deg, #FFFFFF -235%, rgba(255, 255, 255, 0) 161.67%), #F76425;
+            background-blend-mode: overlay, normal;
+        }
+
+        // .our-works-list-item__content_height
+
+        &_height {
+
+        }
+
+        @media (min-width: 769px) {
+            opacity: 0;
+
+            &_detail {
+                opacity: 1;
+                background: linear-gradient(180deg, #FFFFFF -235%, rgba(255, 255, 255, 0) 161.67%), #F76425;
+                background-blend-mode: overlay, normal;
+            }
+        }
+    }
+
+    // .our-works-list-item__content-item
+
+    &__content-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+
+        @media (min-width: 426px) {
+            padding: 10px 20px;
+        }
+
+        // .our-works-list-item__content-item_height
+
+        &_height{
+            max-width: 710px;
+
+            @media (min-width: 769px) {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+    }
+
+    // .our-works-list-item__title-height
+
+    &__title-height {
+        margin-bottom: 15px;
+    }
+
+    // .our-works-list-item__decr-height
+
+    &__decr-height {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.6;
+        color: $white;
+
+        @media (min-width: 426px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 19px;
+        }
+    }
+
+    // .our-works-list-item__img
+
+    &__img {
+        display: block;
+        max-width: 75%;
+        margin-bottom: 15px;
+
+        
+        @media (min-width: 426px) {
+            max-width: 100%;
+        }
+    }
+
+    // .our-works-list-item__btn
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 140px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: $white;
+        background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
+        background-blend-mode: overlay, normal;
+        border-radius: 2px;
+
+        @media (min-width: 426px) {
+            height: 45px;
+            width: 150px;
+        }
+
+        @media (min-width: 600px) {
+            height: 50px;
+            width: 190px;
+        }
+    }
+
+    // .our-works-list-item__title-low
+
+    &__title-low {
+        font-family: Raleway;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        text-transform: uppercase;
+        color: $white;
+
+        @media (min-width: 600px) {
+            font-size: 25px;
+        }
+    }
+
+    // .our-works-list-item__decr-low
+
+    &__decr-low {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.1;
+        color: $white;
+
+        @media (min-width: 600px) {
+            font-size: 19px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.our-works-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    // .our-works-list__left
+
+    &__left {
+        width: 100%;
+
+        @media (min-width:1200px) {
+            width: 56.25%;
+        }
+    }
+
+    // .our-works-list__item
+
+    &__item {
+        position: relative;
+
+    }
+
+    // .our-works-list__right
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        @media (min-width:1200px) {
+            width: 43.75%;
+        }
+    }
+}

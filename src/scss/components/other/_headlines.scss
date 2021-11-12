@@ -109,13 +109,28 @@
             font-weight: 800;
         }
 
+        // .headline_third-idea
+
+        &_third-idea {
+        }
+
+        // .headline__third_our-works
+
+        &_our-works{
+            font-size: 18px;
+            color: $white;
+        }
+
+        @media (min-width: 426px) {
+            &_our-works{
+                font-size: 30px;
+            }
+        }
+
         @media (min-width: 1024px) {
             font-size: 38px;
         }
     }
 
-    // .headline_third-idea
 
-    &_third-idea {
-    }
 }

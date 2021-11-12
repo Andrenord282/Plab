@@ -1,0 +1,31 @@
+.our-works {
+    background-color: $ghostWhite;
+    // .our-works__container
+
+    &__container {
+    }
+
+    // .our-works__content
+
+    &__content {
+        padding: 70px 0;
+    }
+
+    // .our-works__title
+
+    &__title {
+        padding: 0 10px;
+        max-width: 300px;
+        margin: 0 auto 70px auto;
+    }
+
+    // .our-works__list
+
+    &__list {
+        margin-top: 70px;
+    }
+}
+
+
+
+
