@@ -16,3 +16,4 @@ function setSrcImgItem(items, value) {
 
 
 
+console.dir(ourWorksItems[0])

@@ -1,0 +1,47 @@
+
+.footer-bottom {
+    background-color: rgba(25, 25, 25, 0.1);
+
+    // .footer-bottom__container
+
+    &__container {
+    }
+
+    // .footer-bottom__content
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 10px 25px 10px;
+    }
+
+    // .footer-bottom__left
+
+    &__left {
+    }
+
+    // .footer-bottom__copyright
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.37;
+        color: $aluminiumapprox;
+    }
+
+    // .footer-bottom__right
+
+    &__right {
+    }
+
+    // .footer-bottom__privacy
+
+    &__privacy {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        text-decoration-line: underline;
+        color: $aluminiumapprox;
+    }
+}

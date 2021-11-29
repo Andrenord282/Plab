@@ -100,7 +100,40 @@
         line-height: 1.2;
         background: linear-gradient(180deg, #ffffff -221.11%, rgba(255, 255, 255, 0) 193.51%), #f36327;
         background-blend-mode: overlay, normal;
+        &_footer{
+            width: 170px;
+            height: 45px;
+        }
     }
+
+        // .header-worktime-tel-feedback__feedback
+    // .btn__order-feedback
+        &__order-feedback {
+            position: relative;
+            font-family: $defaultFont;
+            font-size: 12px;
+            font-weight: 400;
+            color: $flamingoDefault;
+            padding: 0;
+            white-space: nowrap;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                height: 1px;
+                width: 0%;
+                transform: translateX(-50%);
+                background-color: $flamingoDefault;
+                transition: width .3s linear;
+            }
+    
+            &:hover{
+                &::before{
+                    width: 100%;
+                }
+            }
+        }
     
     // .btn__prepayment
 
@@ -155,6 +188,16 @@
 
         @media (min-width: 426px) {
             padding: 25px 54px;
+        }
+    }
+
+    // .btn__icon 
+
+    &__icon{
+        transition: background-color .3s linear, border-color .3s linear;
+        &:hover{
+            background-color: $flamingoLight;
+            border-color: $flamingoLight;
         }
     }
 
